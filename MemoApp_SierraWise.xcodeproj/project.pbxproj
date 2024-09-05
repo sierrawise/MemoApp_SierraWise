@@ -13,6 +13,8 @@
 		B8DC062D2C7E6ACC00BB9E1F /* MemoApp_SierraWise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8DC062B2C7E6ACC00BB9E1F /* MemoApp_SierraWise.xcdatamodeld */; };
 		B8DC062F2C7E6ACE00BB9E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DC062E2C7E6ACE00BB9E1F /* Assets.xcassets */; };
 		B8DC06322C7E6ACE00BB9E1F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B8DC06312C7E6ACE00BB9E1F /* Base */; };
+		B8FD63F92C810B1B005EB363 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD63F82C810B1B005EB363 /* MemoListTableViewController.swift */; };
+		B8FD63FB2C810E70005EB363 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD63FA2C810E70005EB363 /* Memo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B8DC062E2C7E6ACE00BB9E1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8DC06312C7E6ACE00BB9E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8DC06332C7E6ACE00BB9E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8FD63F82C810B1B005EB363 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
+		B8FD63FA2C810E70005EB363 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		B8DC06212C7E6ACC00BB9E1F /* MemoApp_SierraWise */ = {
 			isa = PBXGroup;
 			children = (
+				B8FD63FA2C810E70005EB363 /* Memo.swift */,
 				B8DC06222C7E6ACC00BB9E1F /* AppDelegate.swift */,
 				B8DC06242C7E6ACC00BB9E1F /* SceneDelegate.swift */,
 				B8DC06282C7E6ACC00BB9E1F /* Main.storyboard */,
+				B8FD63F82C810B1B005EB363 /* MemoListTableViewController.swift */,
 				B8DC062E2C7E6ACE00BB9E1F /* Assets.xcassets */,
 				B8DC06302C7E6ACE00BB9E1F /* LaunchScreen.storyboard */,
 				B8DC06332C7E6ACE00BB9E1F /* Info.plist */,
@@ -141,6 +147,8 @@
 				B8DC06232C7E6ACC00BB9E1F /* AppDelegate.swift in Sources */,
 				B8DC06252C7E6ACC00BB9E1F /* SceneDelegate.swift in Sources */,
 				B8DC062D2C7E6ACC00BB9E1F /* MemoApp_SierraWise.xcdatamodeld in Sources */,
+				B8FD63F92C810B1B005EB363 /* MemoListTableViewController.swift in Sources */,
+				B8FD63FB2C810E70005EB363 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
