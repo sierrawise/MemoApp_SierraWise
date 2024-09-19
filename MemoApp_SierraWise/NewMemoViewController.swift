@@ -9,6 +9,17 @@ import UIKit
 
 class NewMemoViewController: UIViewController {
 
+    
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func save(_ sender: Any) {
+    }
+    
+    
+    @IBOutlet weak var memoTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
