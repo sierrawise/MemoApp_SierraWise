@@ -15,6 +15,7 @@
 		B8DC06322C7E6ACE00BB9E1F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B8DC06312C7E6ACE00BB9E1F /* Base */; };
 		B8FD63F92C810B1B005EB363 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD63F82C810B1B005EB363 /* MemoListTableViewController.swift */; };
 		B8FD63FB2C810E70005EB363 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD63FA2C810E70005EB363 /* Memo.swift */; };
+		CD64F91C2CA3544900F61DD3 /* noTextAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64F91B2CA3544900F61DD3 /* noTextAlert.swift */; };
 		CDF6A3EF2C9CC23500594042 /* NewMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF6A3EE2C9CC23500594042 /* NewMemoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		B8DC06332C7E6ACE00BB9E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8FD63F82C810B1B005EB363 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		B8FD63FA2C810E70005EB363 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		CD64F91B2CA3544900F61DD3 /* noTextAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noTextAlert.swift; sourceTree = "<group>"; };
 		CDF6A3EE2C9CC23500594042 /* NewMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 				B8DC06302C7E6ACE00BB9E1F /* LaunchScreen.storyboard */,
 				B8DC06332C7E6ACE00BB9E1F /* Info.plist */,
 				B8DC062B2C7E6ACC00BB9E1F /* MemoApp_SierraWise.xcdatamodeld */,
+				CD64F91B2CA3544900F61DD3 /* noTextAlert.swift */,
 			);
 			path = MemoApp_SierraWise;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD64F91C2CA3544900F61DD3 /* noTextAlert.swift in Sources */,
 				B8DC06232C7E6ACC00BB9E1F /* AppDelegate.swift in Sources */,
 				B8DC06252C7E6ACC00BB9E1F /* SceneDelegate.swift in Sources */,
 				B8DC062D2C7E6ACC00BB9E1F /* MemoApp_SierraWise.xcdatamodeld in Sources */,
