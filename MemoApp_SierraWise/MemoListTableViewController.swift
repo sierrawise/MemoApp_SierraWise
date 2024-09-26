@@ -19,6 +19,12 @@ class MemoListTableViewController: UITableViewController {
         return formatter
     }()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+        print(#function)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

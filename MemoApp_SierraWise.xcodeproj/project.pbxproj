@@ -17,6 +17,7 @@
 		B8FD63FB2C810E70005EB363 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD63FA2C810E70005EB363 /* Memo.swift */; };
 		CD64F91C2CA3544900F61DD3 /* noTextAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64F91B2CA3544900F61DD3 /* noTextAlert.swift */; };
 		CDF6A3EF2C9CC23500594042 /* NewMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF6A3EE2C9CC23500594042 /* NewMemoViewController.swift */; };
+		CDF7055D2CA5F9DC003E8250 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7055C2CA5F9DC003E8250 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B8FD63FA2C810E70005EB363 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		CD64F91B2CA3544900F61DD3 /* noTextAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noTextAlert.swift; sourceTree = "<group>"; };
 		CDF6A3EE2C9CC23500594042 /* NewMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMemoViewController.swift; sourceTree = "<group>"; };
+		CDF7055C2CA5F9DC003E8250 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				B8DC06332C7E6ACE00BB9E1F /* Info.plist */,
 				B8DC062B2C7E6ACC00BB9E1F /* MemoApp_SierraWise.xcdatamodeld */,
 				CD64F91B2CA3544900F61DD3 /* noTextAlert.swift */,
+				CDF7055C2CA5F9DC003E8250 /* DetailViewController.swift */,
 			);
 			path = MemoApp_SierraWise;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				CDF6A3EF2C9CC23500594042 /* NewMemoViewController.swift in Sources */,
 				B8FD63F92C810B1B005EB363 /* MemoListTableViewController.swift in Sources */,
 				B8FD63FB2C810E70005EB363 /* Memo.swift in Sources */,
+				CDF7055D2CA5F9DC003E8250 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
