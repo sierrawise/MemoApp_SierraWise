@@ -16,14 +16,41 @@ class NewMemoViewController: UIViewController {
     
     
     @IBAction func save(_ sender: Any) {
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Display"
+        content.subtitle = "Pressed Save Button"
+        content.body = "SUCCESS!"
+        content.badge = 0
+        
+        //Time Interval Trigger
+        let TimeIntervalTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.2, repeats: false)
+        
+        //Calendar Notification Trigger
+        //var dateComponents = DateComponents()
+        //dateComponents.calendar = Calendar.current
+        
+        //dateComponents.weekday = 4 //Tuesday
+        //dateComponents.hour = 11
+        
+        //let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        //let uuidString = UUID().uuidString
+        
+        let request = UNNotificationRequest(identifier: "timerdone", content: content, trigger: TimeIntervalTrigger)
+        
+        notificationCenter.add(request, withCompletionHandler: nil)
+        
         guard let memo = memoTextView.text, memo.count > 0 else{
             alert(message: "There is no text");
             return
         }
-        let newMemo = Memo(content: memo)
-        Memo.dummyMemoList.append(newMemo)
+//        let newMemo = Memo(content: memo)
+//       Memo.dummyMemoList.append(newMemo)
+        DataManager.shared.saveMemo(memo)
         
         dismiss(animated: true, completion: nil)
+        
     }
     
     
