@@ -28,6 +28,14 @@ class MemoListTableViewController: UITableViewController {
         print(#function)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell){
+            if let vc = segue.destination as? DetailViewController{
+                vc.memo = DataManager.shared.memoList[indexPath.row]
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,11 +45,10 @@ class MemoListTableViewController: UITableViewController {
             }
             print("didAllow \(didAllow)")
         })
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
         
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        NotificationCenter.default.addObserver(forName: NewMemoViewController.newMemo_Insert, object: nil, queue: OperationQueue.main) {[weak self] _ in
+            self?.tableView.reloadData()
+        }
     }
     
     // MARK: - Table view data source

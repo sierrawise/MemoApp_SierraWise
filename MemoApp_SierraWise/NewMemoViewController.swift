@@ -9,6 +9,7 @@ import UIKit
 
 class NewMemoViewController: UIViewController {
 
+    var editTarget: Memo?
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -47,44 +48,35 @@ class NewMemoViewController: UIViewController {
         }
 //        let newMemo = Memo(content: memo)
 //       Memo.dummyMemoList.append(newMemo)
-        DataManager.shared.saveMemo(memo)
+        if let target = editTarget{
+            target.content = memo
+            DataManager.shared.saveContext()
+            NotificationCenter.default.post(name: NewMemoViewController.memo_Change, object: nil)
+        }
+        else{
+            DataManager.shared.saveMemo(memo)
+            NotificationCenter.default.post(name: NewMemoViewController.newMemo_Insert, object: nil)
+        }
         
         dismiss(animated: true, completion: nil)
         
     }
     
-    
     @IBOutlet weak var memoTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("1.viewDidLoad")
-        print("===================")
-        // Do any additional setup after loading the view.
+        if let memo = editTarget{
+            navigationItem.title = "Edit Memo"
+            memoTextView.text = memo.content
+        }
+        else{
+            navigationItem.title = "New Memo"
+            memoTextView.text = ""
+        }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("2.viewWilAppear")
-        print("===================")
-    }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("3.viewDidAppear")
-        print("===================")
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        print("4.viewWillDisappear")
-        print("===================")
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        print("5.viewDidDisappear")
-        print("===================")
-    }
     /*
     // MARK: - Navigation
 
@@ -95,4 +87,9 @@ class NewMemoViewController: UIViewController {
     }
     */
 
+}
+
+extension NewMemoViewController{
+    static let newMemo_Insert = Notification.Name(rawValue: "newMemo_Insert")
+    static let memo_Change = Notification.Name(rawValue: "memo_Change")
 }
